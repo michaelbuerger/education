@@ -1,0 +1,87 @@
+section {
+  background-color: #9ad4d6;
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: #564787;
+  width: 50%;
+  height: 50%;
+}
+
+#ems h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+}
+
+#ems h2 {
+  /* em here is based on parent */
+  font-size: 2em;
+
+  /* em here is based on above calculated font-size */
+  margin-left: 1em;
+}
+
+#ems h3 {
+  font-size: 1.5em;
+}
+
+#ems p {
+  font-size: 1em;
+}
+
+#ems article {
+  font-size: 20px;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #101935;
+  color: white;
+}
+
+button:hover {
+  background-color: #1c2c5c;
+}
+
+button:active {
+  background-color: #253b7c;
+}
+
+/* em --> relative to parent size, 
+rem --> relative to root html size */
+
+/* For padding, margin, probably other proportions
+ems are actually relative to given items calculated font-size
+e.g. if p has 1.5 em, padding of 1em == that calculated 1.5 em */
+
+#ems ul {
+  font-size: 1.5em;
+}
+
+#rems h2 {
+  font-size: 3rem;
+}
+
+#rems h3 {
+  font-size: 2rem;
+}
+
+#rems ul {
+  font-size: 1.5rem;
+  color: red;
+}
+
+#rems ul ul {
+  font-size: 1.2rem;
+  color: orangered;
+}
+
+#rems ul ul ul {
+  font-size: 1rem;
+  color: orange;
+}

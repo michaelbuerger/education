@@ -1,0 +1,61 @@
+body {
+  background-color: whitesmoke;
+  /* Has a bit of margin by default */
+}
+
+div {
+  width: 400px;
+  background-color: cyan;
+  padding: 10px;
+}
+
+h1 {
+  width: 400px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: cyan;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+#one {
+  border: 5px solid black;
+  border-left-width: 8px;
+  /* width of element based on border to border */
+  /* alt. --> border increases beyond set size */
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#two {
+  border: 5px dashed black;
+  border-left-width: 8px;
+  border-left-style: solid;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#three {
+  border: 4px dotted orange;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: serif;
+  color: whitesmoke;
+  background-color: rgb(125, 125, 250);
+}
+
+button:hover {
+  background-color: rgb(155, 155, 255);
+}
+
+button:active {
+  background-color: rgb(185, 185, 255);
+}

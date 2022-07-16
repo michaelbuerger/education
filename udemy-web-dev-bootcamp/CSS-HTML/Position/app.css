@@ -1,0 +1,44 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #9ad4d6;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#middle {
+  background-color: #564787;
+}
+
+/* For positions: use reference */
+
+#static #middle {
+  position: static;
+  top: 100px;
+}
+
+#relative #middle {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+#absolute {
+  position: relative;
+}
+
+/* Doesn't take up any space */
+#absolute #middle {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+/* Good way to make navbar */
+#fixed #middle {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}

@@ -1,0 +1,38 @@
+span {
+  background-color: palevioletred;
+  border: 1px solid black;
+  color: white;
+  width: 500px;
+  padding: 3px;
+  margin: 10px;
+  display: inline-block;
+}
+
+h1 {
+  background-color: paleturquoise;
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+  width: 300px;
+  padding: 3px;
+  margin: 10px;
+}
+
+div {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin: 0px;
+}
+
+div:nth-of-type(2n) {
+  background-color: red;
+}
+
+div:nth-of-type(2n + 1) {
+  background-color: black;
+}
+
+div:nth-of-type(3) {
+  display: none;
+}

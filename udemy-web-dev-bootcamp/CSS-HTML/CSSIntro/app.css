@@ -1,0 +1,25 @@
+body {
+  background-color: papayawhip;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+button {
+  background-color: #cfcfff;
+  color: darkslategray;
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  border-color: black;
+}
+
+p {
+  color: darkslategray;
+  text-align: left;
+}

@@ -1,0 +1,70 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  /*height: 500px;*/
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex; /* Turn flexbox on */
+  flex-direction: row; /* column: main axis == top to bottom, row: main axis == left to right*/
+  /* row --> left to right, row-reverse --> right-left, column, column-reverse intuitive */
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+
+  /* justify-content --> align along main-axis */
+  /* align-items --> align along cross axis */
+  /* align-content --> control space on cross axis if there is wrap */
+  /* wrap --> decides wrap */
+}
+
+#container div {
+  width: 200px;
+  height: 150px;
+  text-align: center;
+
+  /* flex-basis --> length along main axis */
+  flex-basis: 350px;
+  /* flex: flex-grow | flex-shrink | flex-basis, similar syntax for differing num */
+}
+
+div:nth-of-type(1) {
+  /* given available space on main-axis, expand based on grow-factor */
+  /* if flex-basis isn't reached, they end up being equal sized */
+  flex-grow: 1; /* higher == bigger, relative to other things in flexbox */
+  flex-shrink: 1.5; /* same as above, given smaller size than flex-basis, shrink relatively faster or slower */
+}
+
+div:nth-of-type(5) {
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 500px;
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
+main .sidebar {
+  background-color: navy;
+  flex: 1 2 200px; /* flex grow, shrink, basis */
+}
+
+main .maincontent {
+  background-color: beige;
+  flex: 2 1 800px;
+}

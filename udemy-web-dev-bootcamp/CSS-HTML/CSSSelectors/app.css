@@ -1,0 +1,85 @@
+body {
+  background-color: whitesmoke;
+}
+
+button {
+  background-color: #22aed1;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #25c0e7;
+}
+
+button:active {
+  background-color: #28cdf7;
+}
+
+/* ID */
+#signup {
+  background-color: #016fb9;
+  color: #fbfbff;
+}
+
+#signup:hover {
+  background-color: #0385db;
+}
+
+#signup:active {
+  background-color: #0396f8;
+}
+
+/* h1 and h2 elements */
+h1,
+h2 {
+  color: #1e2019;
+}
+
+span {
+  color: #6d8ea0;
+}
+
+/* Class */
+.tag {
+  background-color: #44af69;
+  color: #fbfbff;
+  font-size: 16px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5%;
+}
+
+.post {
+  background-color: #fbfbff;
+  border-bottom-color: black;
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+}
+
+.post:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+.post a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #016fb9;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post h2::first-letter {
+  font-size: 30px;
+}
+
+p::first-line {
+  color: darkslateblue;
+}
+
+p::selection {
+  background-color: yellow;
+}
